@@ -15,11 +15,25 @@
           </div>
 
           <div class="col-6 col-md-2 mb-3">
-            <h5></h5>
+            <h5>Redes Sociales</h5>
+            <div class="" style="display: flex;
+              flex-direction: column;">
+              <a class="display: block;" href="<?php print_r(pods('datos_de_la_empresa')->display('facebook')); ?>">Facebook</a>
+              <a class="display: block;" href="<?php print_r(pods('datos_de_la_empresa')->display('instagram')); ?>">Instagram</a>
+            </div>
           </div>
 
           <div class="col-6 col-md-2 mb-3">
-            <h5></h5>
+            <h5>Contácto</h5>
+            <div class="" style="display: flex;
+              flex-direction: column;">
+              <p>
+                <?php print_r(pods('datos_de_la_empresa')->display('direccion')); ?>
+              </p>
+              <a class="display: block;" href="tel:<?php print_r(pods('datos_de_la_empresa')->display('telefono')); ?>">
+                <?php print_r(pods('datos_de_la_empresa')->display('telefono')); ?>
+              </a>
+            </div>
           </div>
 
           <div class="col-md-5 offset-md-1 mb-3">
